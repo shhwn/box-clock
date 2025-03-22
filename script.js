@@ -31,3 +31,19 @@ blackBox.addEventListener("mouseleave", function () {
     clearInterval(blackBox.dataset.intervalId);
     blackBox.style.backgroundColor = "black";
 });
+
+blackBox.addEventListener("touchstart", function () {
+    let hue = 0;
+    let saturation = 50;
+    let lightness = 75;
+    let intervalId = setInterval(function () {
+        hue = (hue + 350) % 365;
+        blackBox.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+    }, 175);
+    blackBox.dataset.intervalId = intervalId;
+});
+
+document.addEventListener("touchstart", function () {
+    clearInterval(blackBox.dataset.intervalId);
+    blackBox.style.backgroundColor = "black";
+});

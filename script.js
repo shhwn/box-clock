@@ -43,7 +43,7 @@ blackBox.addEventListener("touchstart", function () {
     blackBox.dataset.intervalId = intervalId;
 });
 
-document.addEventListener("touchstart", function () {
+bottompage.addEventListener("touchstart", function () {
     clearInterval(blackBox.dataset.intervalId);
     blackBox.style.backgroundColor = "black";
 });

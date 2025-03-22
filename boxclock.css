@@ -1,0 +1,34 @@
+body {
+    background-color: hsl(0, 0%, 5%);
+    font-size: xx-large;
+    animation: transitionIn 3000ms;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.boxclock {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.innderBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.innderBox:hover {
+    transition: 0.2s ease-in-out;
+    cursor: default;
+    outline-color: #ffffff;
+    outline-style: solid;
+    box-shadow: 8px 8px #ffffff;
+}
+
+#time {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
